@@ -1,5 +1,5 @@
 requests
-pylint
+pylint==3.1.1
 fastapi
 uvicorn
 httpx
