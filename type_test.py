@@ -7,7 +7,7 @@ def add(a, b):
 
 
 if __name__ == "__main__":
-    x = 5
-    y = 10
-    result = add(x, y)
+    x = 5  # pylint: disable=invalid-name
+    y = 10  # pylint: disable=invalid-name
+    result = add(x, y)  # pylint: disable=invalid-name
     print(f"{x} + {y} = {result}")
