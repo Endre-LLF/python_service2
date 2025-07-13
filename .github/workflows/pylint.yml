@@ -23,4 +23,9 @@ jobs:
         pylint $(git ls-files '*.py')
     - name: Run ruff
       run: |
-        ruff check .
+        ruff check .    
+    - name: Run coverage
+      run: |
+        coverage run -m pytest
+        coverage report -m
+        
